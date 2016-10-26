@@ -1,2 +1,2 @@
-# EECSCSE31LMidterm
+# EECS/CSE31L Midterm
 derp
