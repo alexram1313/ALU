@@ -33,7 +33,7 @@ module Generate(
     logic [127:0] s;
     logic [127:0] cout; 
     
-    cin[0]=((opsel == 3'b100) & (~mode))?1:
+    assign cin[0]=((opsel == 3'b100) & (~mode))?1:
             ((opsel == 3'b110) & (~mode))?1:0;
     
     genvar i;
