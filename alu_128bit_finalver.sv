@@ -82,7 +82,7 @@ module alu_128bit(
         endgenerate
         
         assign o_flag = cout[DWIDTH-1];
-        assign c_flag = cout[DWIDTH-1];
+        assign c_flag = (~mode & ((op1[DWIDTH-1] & op2[DWIDTH-1] & ~result[DWIDTH-1])|(~op1[DWIDTH-1] & ~op2[DWIDTH-1] & result[DWIDTH-1])));
         assign z_flag = result == 0;
         assign s_flag = result[DWIDTH-1];
         
