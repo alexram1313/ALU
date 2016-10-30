@@ -33,7 +33,6 @@ module fa(
                 (opsel == 3'b110)?b:
                 (opsel == 3'b101)?1'b1:
                 (opsel == 3'b001)?~b:
-                (opsel == 3'b100)?1'b0:
                 (opsel == 3'b011)?~b:
                 (opsel == 3'b111)?1'bz:0;
                 
